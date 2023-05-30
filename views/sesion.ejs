@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/general2.css">
+    <link rel="stylesheet" href="/public/sesion.css">
+    <title>Iniciar sesion</title>
+</head>
+<body>
+    <div class="cuerpo">
+        <h1>Bienvenido a Mi Anuario de Proyectos TecSJ</h1>
+        <p>Inicia sesion para continuar.</p>
+        <form action="/validaruser" method="get">
+		<input type="text" id="user" name="user" placeholder="Usuario" required>
+		<input type="password" id="pass" name="pass" placeholder="Contraseña" required>
+        <div class="btningreso">
+            <button type="submit">Ingresar</a></button>
+        </div>
+        <div class="btnregistro">
+            <p>¿No tienes cuenta?</p>
+            <button type="button"><a href="/registro">Regístrate</a></button>
+        </div>
+        
+        </form>
+    </div>
+</body>
+</html>

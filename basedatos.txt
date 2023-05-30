@@ -1,0 +1,53 @@
+Colores:
+Oscuro: #852c42
+Claro: #d14064
+
+
+
+
+
+
+
+
+TblUsuarios.
+
+create table tblusuarios(nombre varchar(200) NOT NULL, user varchar(50) NOT NULL, pass varchar(20) NOT NULL, tipo ENUM('alumno', 'profesor') NOT NULL, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL, primary key (id));
+
+ALTER TABLE tblusuarios ADD CONSTRAINT unico_user UNIQUE (user);
+
+ALTER TABLE tblusuarios ADD CONSTRAINT unico_control UNIQUE (control);
+
+insert into tblusuarios(nombre, user, pass) values ('user', 'password', 'tipo');
+
+TblAlumnos.
+
+create table tblalumnos(nombre varchar(200) NOT NULL, correo varchar(120), semestre int(8), descripcion varchar(1000), foto varchar(200), foreign key (nombre) references tblusuarios(nombre));
+
+insert into tblalumnos(nombre, correo, semestre, descripcion, foto) values (0, 'nombre', 'correo', 0, 'descripcion', 'foto');
+
+TblProyectos
+
+create table tblproyectos(id int NOT NULL AUTO_INCREMENT, nombre varchar(200) NOT NULL, descripcion varchar(1000), enlace varchar(200) NOT NULL, propietario varchar(200) NOT NULL, primary key (id), foreign key (propietario) references tblusuarios(nombre));
+
+insert into tblproyectos(nombre, descripcion, enlace, propietario) values ('nombre', 'descripcion', 'propietario');
+
+TblProfesores
+
+create table tblprofesores(id int NOT NULL AUTO_INCREMENT, nombre varchar(200) NOT NULL, user varchar(50) NOT NULL, pass varchar(32) NOT NULL, primary key (id));
+
+Tblalumnos(segunda versión)
+
+create table tblalumnos(nombre varchar(200) NOT NULL, nocontrol varchar(100) NOT NULL, correo varchar(120), semestre int(8) NOT NULL,user varchar(50) NOT NULL, pass varchar(34) NOT NULL, descripcion varchar(500), foto varchar(200), primary key (nombre));
+
+create table tblproyectos(id int NOT NULL AUTO_INCREMENT, nombre varchar(200) NOT NULL, descripcion varchar(1000), enlace varchar(200) NOT NULL, propietario varchar(200) NOT NULL, primary key (id), foreign key (propietario) references tblalumnos(nombre));
+
+
+//Modificar nombres de columnas.
+
+alter table tblalumnos rename column Correo to correo;
+
+
+//Modificar propiedades de columnas.
+(Si por ejemplo, se quiere cambiar el tipo de dato o agregar alguna propiedad como auto_increment).
+
+alter table tblproyectos modify column id int NOT NULL AUTO_INCREMENT;

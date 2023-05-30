@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #852c42;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #852c42;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d14064;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.agregaproy, .verproy, .adminuser {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.agregaproy img, .verproy img, .adminuser img {
+    max-width: 100%;
+    height: auto;
+}
+
+.agregaproy h2, .verproy h2, .adminuser h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.agregaproy a, .verproy a, .adminuser a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.agregaproy:hover, .verproy:hover, .adminuser:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: contrast(120%);
+    transform: scale(1.15);
+}
+
+.btncerrar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btncerrar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #852c42;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btncerrar button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btncerrar button:hover {
+    background-color: #d14064;
+}
+
+

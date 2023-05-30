@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/general.css">
+    <link rel="stylesheet" href="/public/addproy.css">
+    <title>Agregar un proyecto</title>
+</head>
+<body>
+    <h1>Agrega un proyecto nuevo.</h1>
+    <form action="/registroproy" method="post">
+        <label for="nombre">Nombra tu proyecto: </label>
+		<input type="text" id="nombre" name="nombre" placeholder="Nombre del proyecto" required>
+        <label for="descripcion">Decribe tu proyecto (opcional pero recomendado): </label>
+		<input type="text" id="descripcion" name="descripcion" placeholder="Descripción del proyecto">
+        <label for="enlace">Enlace al proyecto: </label>
+		<input type="text" id="correo" name="enlace" placeholder="URL" required>
+        <label for="propietario">introduce tu nombre completo: </label>
+		<input type="text" id="propietario" name="propietario" placeholder="Propietario" required>
+            <input type="submit" value="Subir proyecto">
+    </form>
+        
+
+        <div class="btninicio">
+        <button type="button"><a href="/inicioalumnos">Cancelar</a></button>
+        </div>
+</body>
+</html>

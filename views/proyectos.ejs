@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/cards.css">
+    <link rel="stylesheet" href="/public/general.css">
+    <link rel="stylesheet" href="/public/busqueda.css">
+    <title>Resultados de busqueda</title>
+</head>
+<body>
+    <div>
+        <form action="/buscarproyecto" method="post">
+            <input type="text" name="textoBusqueda" placeholder="Nombre del proyecto o alumno">
+            <button type="submit">Buscar</button>
+          </form>
+    </div>
+</div>
+<button type="button"><a href="/inicioalumnos">Volver a inicio</a></button>
+<button type="button"><a href="/agregarproyecto">Agrega un nuevo proyecto</a></button>
+</div>
+
+    <div class="cuerpo">
+        <h1>Proyectos</h1>
+        <div class="grid-container">
+            <%rows.forEach(tblproyectos =>{%>
+                <div class="card">
+                    <div class="contenido">
+                        <h3><%=tblproyectos.nombre%></h3>
+                        <p><%=tblproyectos.descripcion%></p>
+                        <p>URL: <%=tblproyectos.enlace%></p>
+                        <p>Por: <%=tblproyectos.propietario%></p>
+                    </div>
+                  </div>
+        </div>
+        
+    </div>
+    <%})%>
+</body>
+</html>

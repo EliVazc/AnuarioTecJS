@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/inicio.css">
+    <link rel="stylesheet" href="/public/general.css">
+    <title>Profesores</title>
+</head>
+<body>
+    <div>
+        <h1>Bienvenido.</h1>
+        <h2>Busca alumnos.</h2>
+        <form action="/buscaralumnosp" method="post">
+            <input type="text" name="nombre" placeholder="Nombre del alumno">
+            <button type="submit">Buscar</button>
+          </form>
+    </div>
+    <div class="container">
+        <div class="adminuser">
+            <a href="/usuarios"><img src="/public/imagenes/grupousuarios.png" alt=""></a>
+            <h2><a href="/usuarios">Administrar alumnos</a></h2>
+        </div>
+        <div class="verproy">
+            <a href="/proyectosprofes"><img src="/public/imagenes/laptop-removebg-preview.png" alt=""></a>
+            <h2><a href="/proyectosprofes">Proyectos</a></h2>
+        </div>
+    </div>
+    
+    <div class="btncerrar">
+        <button type="button"><a href="/sesion">Cerrar sesión</a></button>
+    </div>
+</body>
+</html>

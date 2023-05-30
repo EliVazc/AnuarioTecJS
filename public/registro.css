@@ -1,0 +1,104 @@
+/* registro.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+    background-color: white;
+    color: rgb(39, 39, 39);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #852c42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Nueva propiedad agregada para bajar el botón */
+}
+
+.form-submit {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+input[type="submit"]:hover {
+    background-color: #d14064; /* Cambio de color al pasar el mouse */
+}
+
+
+
+.btninicio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btninicio p {
+    margin: 0;
+}
+
+.btninicio button {
+    background-color: #852c42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btninicio button a {
+    color: white;
+    text-decoration: none;
+}
+
+.btninicio button:hover {
+    background-color: #d14064;
+}

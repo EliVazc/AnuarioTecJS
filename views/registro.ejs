@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/general2.css">
+    <link rel="stylesheet" href="/public/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Regístrate en Mi anuario TecJS</h1>
+    <form action="/registrar" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre completo.</label>
+		<input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        <label for="nocontrol">Introduce tu numero de control.</label>
+		<input type="text" id="nocontrol" name="nocontrol" placeholder="No. Control" required>
+        <label for="correo">Introduce tu correo electrónico (opcional).</label>
+		<input type="text" id="correo" name="correo" placeholder="Email">
+        <label for="semestre">Semestre.</label>
+        <select id="semestre" name="semestre" required>
+            <option value="">Semestre en curso.</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="11">12</option>
+        </select>
+        <label for="user">Introduce tu nombre de usuario.</label>
+		<input type="text" id="user" name="user" placeholder="Usuario" required>
+        <label for="pass">Introduce tu contraseña</label>
+		<input type="text" id="pass" name="pass" placeholder="Contraseña" required>
+        <label for="descripcion">Cuéntanos un poco de ti (opcional).</label>
+		<input type="text" id="descripcion" name="descripcion" placeholder="Ej: Me gusta la programación.">
+        <label for="foto">Foto de perfil (opcional).</label>
+		<input type="file" id="foto" name="file">
+
+        <div class="form-submit">
+            <input type="submit" value="Registrarse">
+        </div>
+
+    </form>
+        
+
+        <div class="btninicio">
+            <p>¿Ya tienes un usuario?</p>
+            <button><a href="/">Inicia Sesion</a></button>
+        </div>
+</body>
+</html>
